@@ -15,9 +15,9 @@ class TestingAnswers: XCTestCase {
     // EXAMPLE -> array = [8,7,2,5,3,1], sum = 10 --> pair found at indexes 0 and 2
     func testFirstQuestion() {
         
-        let findPair_GivenSum_InArray = FindPair_GivenSum_InArray()
+        let firstQuestion = FirstQuestion()
         
-        let indexes = findPair_GivenSum_InArray.findPairOfGivenArray(arr: [8,7,2,5,3,1], sum: 10)
+        let indexes = firstQuestion.findPairOfGivenArray(arr: [8,7,2,5,3,1], sum: 10)
         XCTAssertTrue(indexes.0 == 0)
         XCTAssertTrue(indexes.1 == 2)
         
@@ -26,9 +26,9 @@ class TestingAnswers: XCTestCase {
     
     func testFirstQuestion_Quicker() {
         
-        let findPair_GivenSum_InArray = FindPair_GivenSum_InArray()
+        let firstQuestion = FirstQuestion()
         
-        let indexes = findPair_GivenSum_InArray.findPairOfGivenArrayQuicker(arr: [8,7,2,5,3,1], sum: 10)
+        let indexes = firstQuestion.findPairOfGivenArrayQuicker(arr: [8,7,2,5,3,1], sum: 10)
         
         XCTAssertTrue(indexes.0 == 1)
         XCTAssertTrue(indexes.1 == 5)

@@ -8,7 +8,11 @@
 
 import Foundation
 
-struct FindPair_GivenSum_InArray {
+struct FirstQuestion {
+    
+    // Find pair with given Sum in The Array
+    // Given an unsorted array of integers, find a pair with given sum in it
+    // EXAMPLE -> array = [8,7,2,5,3,1], sum = 10 --> pair found at indexes 0 and 2
     
     func findPairOfGivenArray(arr: [Int], sum: Int) -> (Int, Int) {
         
@@ -31,9 +35,7 @@ struct FindPair_GivenSum_InArray {
         return (0, 0)
     }
     
-    // Testing
-//    print(findPairOfGivenArray(arr: [8,7,2,5,3,1], sum: 10)) // N^2 Response Time
-    
+    // Quicker
     func findPairOfGivenArrayQuicker(arr: [Int], sum: Int) -> (Int, Int) {
         
         let sortedArray = arr.sorted()
@@ -59,7 +61,4 @@ struct FindPair_GivenSum_InArray {
         
         return (0, 0)
     }
-    
-//    print(findPairOfGivenArrayQuicker(arr: [8,7,2,5,3,1], sum: 10)) // nlogn
-
 }
