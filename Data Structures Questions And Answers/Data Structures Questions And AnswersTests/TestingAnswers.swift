@@ -55,4 +55,14 @@ class TestingAnswers: XCTestCase {
         
         XCTAssertEqual(6, subArrays.count)
     }
+    
+    // MARK: Given a binary array, sort it in linear time and constant space. Output should print contain all zeros followed by all ones
+    // EXAMPLE 1,0,1,0,1,0,0,1 -> 0,0,0,0,1,1,1,1
+    func testThirdQuestion() {
+        
+        let thirdQuestion = ThirdQuestion()
+        let returnedArray = thirdQuestion.sortBinaryArrayInLinearTime(arr: [1,0,1,0,1,0,0,1])
+        
+        XCTAssertEqual([0,0,0,0,1,1,1,1], returnedArray)
+    }
 }
