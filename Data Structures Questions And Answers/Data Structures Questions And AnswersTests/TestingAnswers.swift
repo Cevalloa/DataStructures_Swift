@@ -65,4 +65,14 @@ class TestingAnswers: XCTestCase {
         
         XCTAssertEqual([0,0,0,0,1,1,1,1], returnedArray)
     }
+    
+    // MARK: Given an array of integers, rearrange the array such that every second element of the array is greater than its left and right elements. Assume no duplicate elemnts are present in the array
+    // EXAMPLE: [1,2,3,4,5,6,7] -> [1,5,2,6,6,7,4]
+    func testFourthQuestion() {
+        
+        let fourthQuestion = FourthQuestion()
+        let returnedArray = fourthQuestion.sortEverySecondElementGreaterThanLeftAndRight(unsortedArray: [1,2,3,4,5,6,7])
+        
+        XCTAssertTrue([1,5,2,6,3,7,4] == returnedArray)
+    }
 }
